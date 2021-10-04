@@ -1,0 +1,1 @@
+IMBeeHive是用于iOS的App模块化编程的框架实现方案，吸收了Spring框架Service的理念来实现模块间的API耦合。
