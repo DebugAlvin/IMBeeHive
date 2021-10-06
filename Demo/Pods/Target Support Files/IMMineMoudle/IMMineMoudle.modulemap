@@ -1,6 +1,0 @@
-framework module IMMineMoudle {
-  umbrella header "IMMineMoudle-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module IMBeeHive {
-  umbrella header "IMBeeHive-umbrella.h"
-
-  export *
-  module * { export * }
-}

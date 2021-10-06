@@ -1,6 +1,0 @@
-framework module IMLuanchMoudle {
-  umbrella header "IMLuanchMoudle-umbrella.h"
-
-  export *
-  module * { export * }
-}
