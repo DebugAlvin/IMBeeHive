@@ -19,3 +19,9 @@ yy直播
 支持route（计划更新）  
 # Installation
 pod "IMBeeHive"
+# 初始化
+__attribute__((constructor)) void loadBeeHiveMoudle () {
+    [IMBeeHive shareInstance].context.configName = @"IMBeeHive.bundle/IMBeeHive";//可选，默认为IMBeeHive.bundle/IMBeeHive
+    [[IMBeeHive shareInstance] registerAll]; //从配置里面注册所有moudle或者service
+    [[IMBeeHive shareInstance] setupAll]; //设置ioc容器里面所有的对象
+}
