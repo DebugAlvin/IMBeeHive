@@ -1,0 +1,6 @@
+framework module Pods_IMAudioLive {
+  umbrella header "Pods-IMAudioLive-umbrella.h"
+
+  export *
+  module * { export * }
+}

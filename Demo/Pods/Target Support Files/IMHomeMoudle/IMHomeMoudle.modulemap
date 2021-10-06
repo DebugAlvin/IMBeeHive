@@ -1,0 +1,6 @@
+framework module IMHomeMoudle {
+  umbrella header "IMHomeMoudle-umbrella.h"
+
+  export *
+  module * { export * }
+}

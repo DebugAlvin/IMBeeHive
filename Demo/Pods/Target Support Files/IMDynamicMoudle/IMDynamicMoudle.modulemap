@@ -1,0 +1,6 @@
+framework module IMDynamicMoudle {
+  umbrella header "IMDynamicMoudle-umbrella.h"
+
+  export *
+  module * { export * }
+}

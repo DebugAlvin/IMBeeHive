@@ -1,0 +1,6 @@
+framework module IMChatMoudle {
+  umbrella header "IMChatMoudle-umbrella.h"
+
+  export *
+  module * { export * }
+}
