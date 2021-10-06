@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "summary": "A short description of IMBeeHive.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/alvin/IMBeeHive",
+  "homepage": "https://github.com/DebugAlvin/IMBeeHive",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "alvin": "674268015@qq.com"
   },
   "source": {
-    "git": "https://github.com/alvin/IMBeeHive.git",
+    "git": "https://github.com/DebugAlvin/IMBeeHive.git",
     "tag": "0.1.0"
   },
   "platforms": {

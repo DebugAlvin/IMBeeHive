@@ -16,6 +16,7 @@
 #import "IMBeeHive.h"
 #import "IMDispatcherManager.h"
 #import "IMIocFactory.h"
+#import "IMModuleBundle.h"
 #import "IMModuleProtocol.h"
 #import "IMServiceProtocol.h"
 

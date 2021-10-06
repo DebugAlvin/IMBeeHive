@@ -1,0 +1,28 @@
+{
+  "name": "IMMineMoudle",
+  "version": "0.1.0",
+  "summary": "A short description of IMMineMoudle.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/alvin/IMMineMoudle",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "alvin": "674268015@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/alvin/IMMineMoudle.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "IMMineMoudle/Classes/**/*",
+  "dependencies": {
+    "IMBeeHive": [
+
+    ]
+  },
+  "static_framework": true
+}

@@ -7,40 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		141403501A2F1F0625E01457287E3C76 /* IMApplicationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = EE73FC0D077E83404F6A58C73FA66E55 /* IMApplicationContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		313BFF459ABC3C46DB1A9DA19C73004C /* IMApplicationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A8D282A08E3B478C632BA04F361228B3 /* IMApplicationContext.m */; };
-		32BD940EC335A2DFE87C8E2A4A1CAB2B /* IMModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 219CA15F240572AFB5F018BF414FD12F /* IMModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0732C0748F2EFCA8F2A3AEE75050403F /* IMApplicationDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 8340EC52581B658DC6E0887B0219962E /* IMApplicationDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1312E1390F0B7EB13D62433CAB4977BC /* IMIocFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = AD90343B5FDF902B6CE67D61325801D7 /* IMIocFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		13191C1FA9B325ACD23357133850D742 /* IMDispatcherManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 90132DFBE758C1C14A3AE50ED0980041 /* IMDispatcherManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25EBF0FAF1FFE4FEB904D0BE7EB138D4 /* IMBeeHive.h in Headers */ = {isa = PBXBuildFile; fileRef = 0AF1B9884FA4FF2183176BDB7C3D1390 /* IMBeeHive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3304727205D5A20F134C89DE18B97862 /* Pods-IMBeeHive_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C141369FDD61465FF14553AA7C70061 /* Pods-IMBeeHive_Tests-dummy.m */; };
-		339570F440336BC29346FB737515A647 /* IMServiceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 128B5076387A78594CCD5630265A0606 /* IMServiceProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		361D9ADD1FA05206EF204DD557C50914 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		4796A10B71E3CACF4EFE968DF8602AF6 /* IMBeeHive.m in Sources */ = {isa = PBXBuildFile; fileRef = CB3980E83BCDF5429607C57E29087B9D /* IMBeeHive.m */; };
+		37A57AE4881C72D51CC19416CE645C66 /* IMIocFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 45D20A8A8C4A8F615DB0C7D1EA03043E /* IMIocFactory.m */; };
+		47BCFDDAF9E9E5A03782C1960D7BC46F /* IMApplicationDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = DD749F4D75DC63063F4E844D81535DF7 /* IMApplicationDispatcher.m */; };
+		4ABD9C6A9C6923A3D69032E6AC8EF842 /* IMModuleProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = FFCA634E7F80C75BABE73BEEED56919C /* IMModuleProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54188F2BCA5D14E4E7C876AF437E4233 /* IMApplicationExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB787CBA996C03811E5F1EF6D0EAEE2 /* IMApplicationExchange.m */; };
+		559CC2ADAEFCC711C0FA192D2695BF6F /* IMApplicationExchange.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8BFAAB0CD45CAAB1A846124CBCF0F4 /* IMApplicationExchange.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5D852299204983B26BE53C75F68A1E3D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		6AC9E399BC1C425155FBFA9A45CA1A53 /* IMDispatcherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A1932B5B0A858712DD1ABCFB57925744 /* IMDispatcherManager.m */; };
-		72B1BFDB96C25FE64BC7A1797474A6EC /* IMIocFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = C53CBD155FAB5F32A4571DC0EC6F35DD /* IMIocFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		665F06D646F6774C0B0DBC6D4409F0AD /* IMApplicationContext.h in Headers */ = {isa = PBXBuildFile; fileRef = C498B5D9022546D52D62DC383335270A /* IMApplicationContext.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75C9C78109B39788144B7E10D3914A30 /* IMDispatcherManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 02D81832FB6D9D5DCA9A6185CB7DA9A0 /* IMDispatcherManager.m */; };
 		8075F6EBF18EBE9BE1B0617838F7881B /* Pods-IMBeeHive_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF0E599EA056DD2732DF6AA4F70AE5A /* Pods-IMBeeHive_Example-dummy.m */; };
-		870F6344765A952164A4107593F7D9E5 /* IMBeeHive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D320AEF9E20CFFB6A052BF280FAAAD /* IMBeeHive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6524EE106EEEFF42C2F9C54C3BB2535 /* IMIocFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF38E086DB6678A179C00FEFF3C1FF0 /* IMIocFactory.m */; };
-		A8E9F9DADBD61F5FF9C3477D6D715E63 /* IMBeeHive.h in Headers */ = {isa = PBXBuildFile; fileRef = C021782F876E752740CA4C29E466EF92 /* IMBeeHive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		933CB98967507F3B4C355875AD761FE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9D3222F1BF0C9BEE79F289DC13EAF3EA /* IMApplicationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A775C115943D5A3AC795923FFB9934A /* IMApplicationContext.m */; };
 		AF6B504BF9524F1A0D69A438B3DE3E0E /* Pods-IMBeeHive_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFA2BE698A6CC24BFE02FADF845AA443 /* Pods-IMBeeHive_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFF88D829FFC08043BEBA8FF2D0C6C73 /* IMApplicationDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7880E37DD75A0EFFDDD71A5815CB10 /* IMApplicationDispatcher.m */; };
-		B7B006893D315F0B6EECE2D1A49F789C /* IMDispatcherManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E7E40E720C6C37C751E9A8ADF8CBF324 /* IMDispatcherManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C138EF6F9AE974B7472CDCC66FED8245 /* IMApplicationDispatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = DF1EB9AADF3D8A03C3E91197B1ED2199 /* IMApplicationDispatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8F24F1499787D746FD6BC492C73AE1D /* IMBeeHive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC000F818761F831234EBF6EA392DDD /* IMBeeHive-dummy.m */; };
+		B884A1945798BAD211F8A974ED930C18 /* IMBeeHive.m in Sources */ = {isa = PBXBuildFile; fileRef = AED0598CA7D4C325BE016C6326E95458 /* IMBeeHive.m */; };
 		CBF55EA91DA6E935C2AC712E5A031A23 /* Pods-IMBeeHive_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BAE93E4223C0AC9E5B85792A34711B95 /* Pods-IMBeeHive_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DBAE7EB8D6A2CBA067FCFBB5F44F1908 /* IMApplicationExchange.h in Headers */ = {isa = PBXBuildFile; fileRef = 26190FF70DFB4A9C65ECA2DB3187FADD /* IMApplicationExchange.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD503A4B6C2EAF2C7D5A0CA23F026378 /* IMApplicationExchange.m in Sources */ = {isa = PBXBuildFile; fileRef = 66B3A16E6BF74690DE0EC9592787AA5B /* IMApplicationExchange.m */; };
-		F0DF0ACE7D0659DB5FD5FB4C1BEF4934 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CF6D060D40BEEF98AF23F79F8D10B7F7 /* IMModuleBundle.h in Headers */ = {isa = PBXBuildFile; fileRef = A4A39E7B43A82C34829ABAAD35CC13D7 /* IMModuleBundle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1AE70F9EFA477C4ED34B37B068761DE /* IMBeeHive-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C23FD02CD74683D9C396D79616840B /* IMBeeHive-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D82EEA1B820BC3DA78C7A4E8E7646C65 /* IMBeeHive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 275BDA6969DEECD757A068F027714D46 /* IMBeeHive-dummy.m */; };
+		E1DD3DE3320E94B1378A9FDFAA44B267 /* IMModuleBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = A79B72057AE49D2EDF335FA61DD6E839 /* IMModuleBundle.m */; };
+		EFE7E74A546821F39C939914F87F2C1D /* IMServiceProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = E64AF66EBE26EEA7F3411B9BC3A60F64 /* IMServiceProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5219A2DD1B7BB1E3BE4221D854C6E468 /* PBXContainerItemProxy */ = {
+		0DACD825DF970C893B4D472DA7B7A860 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C401AC657EAEA4C77232165B008D9C00;
 			remoteInfo = "Pods-IMBeeHive_Example";
 		};
-		EB233CB1BA80E73AB248F62F3473B0CF /* PBXContainerItemProxy */ = {
+		87B27144CC6835F171FDCDDDC0545D91 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -50,55 +52,65 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		050978D3E23A8310570A49DA69ED18A3 /* IMBeeHive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMBeeHive.debug.xcconfig; sourceTree = "<group>"; };
+		02D81832FB6D9D5DCA9A6185CB7DA9A0 /* IMDispatcherManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMDispatcherManager.m; path = IMBeeHive/Classes/IMDispatcherManager.m; sourceTree = "<group>"; };
+		04C23FD02CD74683D9C396D79616840B /* IMBeeHive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMBeeHive-umbrella.h"; sourceTree = "<group>"; };
+		0AF1B9884FA4FF2183176BDB7C3D1390 /* IMBeeHive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMBeeHive.h; path = IMBeeHive/Classes/IMBeeHive.h; sourceTree = "<group>"; };
 		0C141369FDD61465FF14553AA7C70061 /* Pods-IMBeeHive_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMBeeHive_Tests-dummy.m"; sourceTree = "<group>"; };
-		0E95C80C89CE9971C79166E6CCBF39DC /* IMBeeHive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMBeeHive-prefix.pch"; sourceTree = "<group>"; };
-		128B5076387A78594CCD5630265A0606 /* IMServiceProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMServiceProtocol.h; path = IMBeeHive/Classes/IMServiceProtocol.h; sourceTree = "<group>"; };
-		13D9460D072C2979BB4FCAFC0341F949 /* IMBeeHive-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IMBeeHive-Info.plist"; sourceTree = "<group>"; };
-		219CA15F240572AFB5F018BF414FD12F /* IMModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMModuleProtocol.h; path = IMBeeHive/Classes/IMModuleProtocol.h; sourceTree = "<group>"; };
-		26190FF70DFB4A9C65ECA2DB3187FADD /* IMApplicationExchange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMApplicationExchange.h; path = IMBeeHive/Classes/IMApplicationExchange.h; sourceTree = "<group>"; };
+		0F9278EF63A4CD01A2CF801A88FD2101 /* IMBeeHive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMBeeHive.debug.xcconfig; sourceTree = "<group>"; };
+		275BDA6969DEECD757A068F027714D46 /* IMBeeHive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IMBeeHive-dummy.m"; sourceTree = "<group>"; };
+		2B8BFAAB0CD45CAAB1A846124CBCF0F4 /* IMApplicationExchange.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMApplicationExchange.h; path = IMBeeHive/Classes/IMApplicationExchange.h; sourceTree = "<group>"; };
 		393B58814BB50EAD90D4458FBC222D69 /* Pods_IMBeeHive_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IMBeeHive_Tests.framework; path = "Pods-IMBeeHive_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C728C7628AF5A65B7F25EB60A373722 /* Pods-IMBeeHive_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMBeeHive_Tests-Info.plist"; sourceTree = "<group>"; };
-		3EC000F818761F831234EBF6EA392DDD /* IMBeeHive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IMBeeHive-dummy.m"; sourceTree = "<group>"; };
+		45D20A8A8C4A8F615DB0C7D1EA03043E /* IMIocFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMIocFactory.m; path = IMBeeHive/Classes/IMIocFactory.m; sourceTree = "<group>"; };
 		4AF0E599EA056DD2732DF6AA4F70AE5A /* Pods-IMBeeHive_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IMBeeHive_Example-dummy.m"; sourceTree = "<group>"; };
-		5B7880E37DD75A0EFFDDD71A5815CB10 /* IMApplicationDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMApplicationDispatcher.m; path = IMBeeHive/Classes/IMApplicationDispatcher.m; sourceTree = "<group>"; };
 		65E68D8530B43362F232EDD43AD52258 /* Pods-IMBeeHive_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMBeeHive_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		66B3A16E6BF74690DE0EC9592787AA5B /* IMApplicationExchange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMApplicationExchange.m; path = IMBeeHive/Classes/IMApplicationExchange.m; sourceTree = "<group>"; };
-		6F5250BE7F192FB765F4173DD61A494A /* IMBeeHive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IMBeeHive.modulemap; sourceTree = "<group>"; };
+		6A775C115943D5A3AC795923FFB9934A /* IMApplicationContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMApplicationContext.m; path = IMBeeHive/Classes/IMApplicationContext.m; sourceTree = "<group>"; };
+		6BB787CBA996C03811E5F1EF6D0EAEE2 /* IMApplicationExchange.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMApplicationExchange.m; path = IMBeeHive/Classes/IMApplicationExchange.m; sourceTree = "<group>"; };
+		6ECFB427115640AB65EA8E4DDDB9B798 /* IMBeeHive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMBeeHive.release.xcconfig; sourceTree = "<group>"; };
+		70FFB00A02AC64632A9657BA59081A78 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		760AF36AF35513B6DFF44DD553FBBDD3 /* Pods_IMBeeHive_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_IMBeeHive_Example.framework; path = "Pods-IMBeeHive_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A70B75942502A8EB78D87FFBAB07C1 /* IMBeeHive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IMBeeHive.framework; path = IMBeeHive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B08F9891A7515156114DC58CC0CE84F /* IMBeeHive.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IMBeeHive.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7D557B288DD8C07428CDDA378D56B461 /* IMBeeHive.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IMBeeHive.modulemap; sourceTree = "<group>"; };
+		7F05D9F9CC0662EBE9D4DEC31012EFF7 /* IMBeeHive-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IMBeeHive-Info.plist"; sourceTree = "<group>"; };
 		814BBE77ED993BC74F05FBAA923C41DE /* Pods-IMBeeHive_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IMBeeHive_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8340EC52581B658DC6E0887B0219962E /* IMApplicationDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMApplicationDispatcher.h; path = IMBeeHive/Classes/IMApplicationDispatcher.h; sourceTree = "<group>"; };
 		83C9AB5057E0645000F46C3D84EE1226 /* Pods-IMBeeHive_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMBeeHive_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		883B078A2A2C14F4FC33A58FBBFEEEB9 /* IMBeeHive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IMBeeHive.release.xcconfig; sourceTree = "<group>"; };
 		8E96A96476C610E766F139BC7D025F21 /* Pods-IMBeeHive_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IMBeeHive_Tests.modulemap"; sourceTree = "<group>"; };
-		931E0C8E833CD25630AAA5CA322611C0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		90132DFBE758C1C14A3AE50ED0980041 /* IMDispatcherManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMDispatcherManager.h; path = IMBeeHive/Classes/IMDispatcherManager.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1932B5B0A858712DD1ABCFB57925744 /* IMDispatcherManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMDispatcherManager.m; path = IMBeeHive/Classes/IMDispatcherManager.m; sourceTree = "<group>"; };
+		A4A39E7B43A82C34829ABAAD35CC13D7 /* IMModuleBundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMModuleBundle.h; path = IMBeeHive/Classes/IMModuleBundle.h; sourceTree = "<group>"; };
 		A543AA85927A66E3F16A7264C7B20E96 /* Pods-IMBeeHive_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMBeeHive_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		A8D282A08E3B478C632BA04F361228B3 /* IMApplicationContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMApplicationContext.m; path = IMBeeHive/Classes/IMApplicationContext.m; sourceTree = "<group>"; };
+		A79B72057AE49D2EDF335FA61DD6E839 /* IMModuleBundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMModuleBundle.m; path = IMBeeHive/Classes/IMModuleBundle.m; sourceTree = "<group>"; };
 		A8EB76238D5238F9F1C40B9DB0CF3275 /* Pods-IMBeeHive_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMBeeHive_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		AD90343B5FDF902B6CE67D61325801D7 /* IMIocFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMIocFactory.h; path = IMBeeHive/Classes/IMIocFactory.h; sourceTree = "<group>"; };
+		AED0598CA7D4C325BE016C6326E95458 /* IMBeeHive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMBeeHive.m; path = IMBeeHive/Classes/IMBeeHive.m; sourceTree = "<group>"; };
+		B0115035FA46B49E4D02544D2E665C46 /* IMBeeHive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMBeeHive-prefix.pch"; sourceTree = "<group>"; };
 		BAE93E4223C0AC9E5B85792A34711B95 /* Pods-IMBeeHive_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IMBeeHive_Tests-umbrella.h"; sourceTree = "<group>"; };
 		BF481C5AA0646E72CE6342FF04F9A9EB /* Pods-IMBeeHive_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IMBeeHive_Example.modulemap"; sourceTree = "<group>"; };
-		C021782F876E752740CA4C29E466EF92 /* IMBeeHive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMBeeHive.h; path = IMBeeHive/Classes/IMBeeHive.h; sourceTree = "<group>"; };
 		C24585092D2A9B7B62F286B71B4A5C34 /* Pods-IMBeeHive_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMBeeHive_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		C53CBD155FAB5F32A4571DC0EC6F35DD /* IMIocFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMIocFactory.h; path = IMBeeHive/Classes/IMIocFactory.h; sourceTree = "<group>"; };
-		CAF38E086DB6678A179C00FEFF3C1FF0 /* IMIocFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMIocFactory.m; path = IMBeeHive/Classes/IMIocFactory.m; sourceTree = "<group>"; };
-		CB3980E83BCDF5429607C57E29087B9D /* IMBeeHive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMBeeHive.m; path = IMBeeHive/Classes/IMBeeHive.m; sourceTree = "<group>"; };
-		CC2A69FA0CB275C9F4559FDE9C7BEE46 /* IMBeeHive.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IMBeeHive.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D1D320AEF9E20CFFB6A052BF280FAAAD /* IMBeeHive-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IMBeeHive-umbrella.h"; sourceTree = "<group>"; };
+		C498B5D9022546D52D62DC383335270A /* IMApplicationContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMApplicationContext.h; path = IMBeeHive/Classes/IMApplicationContext.h; sourceTree = "<group>"; };
 		D9AD128F6CA91D20648FC3707D68C728 /* Pods-IMBeeHive_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMBeeHive_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		DD749F4D75DC63063F4E844D81535DF7 /* IMApplicationDispatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IMApplicationDispatcher.m; path = IMBeeHive/Classes/IMApplicationDispatcher.m; sourceTree = "<group>"; };
 		DDFAF4A1F210001747E6ACBB8B5B4BBF /* Pods-IMBeeHive_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IMBeeHive_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DF1EB9AADF3D8A03C3E91197B1ED2199 /* IMApplicationDispatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMApplicationDispatcher.h; path = IMBeeHive/Classes/IMApplicationDispatcher.h; sourceTree = "<group>"; };
 		E3802CED8C927DDFC046AB5FFAA09176 /* Pods-IMBeeHive_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IMBeeHive_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E7E40E720C6C37C751E9A8ADF8CBF324 /* IMDispatcherManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMDispatcherManager.h; path = IMBeeHive/Classes/IMDispatcherManager.h; sourceTree = "<group>"; };
-		EE73FC0D077E83404F6A58C73FA66E55 /* IMApplicationContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMApplicationContext.h; path = IMBeeHive/Classes/IMApplicationContext.h; sourceTree = "<group>"; };
+		E64AF66EBE26EEA7F3411B9BC3A60F64 /* IMServiceProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMServiceProtocol.h; path = IMBeeHive/Classes/IMServiceProtocol.h; sourceTree = "<group>"; };
 		EFA2BE698A6CC24BFE02FADF845AA443 /* Pods-IMBeeHive_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IMBeeHive_Example-umbrella.h"; sourceTree = "<group>"; };
+		F5C4221829E680A1AB2959895A319CCE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		F62CE9A18D1DFB8C7EECCBB750F1D3A0 /* Pods-IMBeeHive_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IMBeeHive_Example-Info.plist"; sourceTree = "<group>"; };
-		FB0C21E63E5BBF6283593A3958D81C25 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		FFCA634E7F80C75BABE73BEEED56919C /* IMModuleProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IMModuleProtocol.h; path = IMBeeHive/Classes/IMModuleProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0FDD783E3E9975733AD3752C58B27093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				933CB98967507F3B4C355875AD761FE7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C9D1194A6CD90ED624B84EA8F84DD36B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,14 +124,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				361D9ADD1FA05206EF204DD557C50914 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EB12F890ADC58FAB38D0797E99E11D78 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F0DF0ACE7D0659DB5FD5FB4C1BEF4934 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,29 +147,48 @@
 			path = "Target Support Files/Pods-IMBeeHive_Example";
 			sourceTree = "<group>";
 		};
-		2A170EA92ED85DCA349760C1C512871A /* Support Files */ = {
+		139251D0E2CC4D43E207C80E04D56C42 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				6F5250BE7F192FB765F4173DD61A494A /* IMBeeHive.modulemap */,
-				3EC000F818761F831234EBF6EA392DDD /* IMBeeHive-dummy.m */,
-				13D9460D072C2979BB4FCAFC0341F949 /* IMBeeHive-Info.plist */,
-				0E95C80C89CE9971C79166E6CCBF39DC /* IMBeeHive-prefix.pch */,
-				D1D320AEF9E20CFFB6A052BF280FAAAD /* IMBeeHive-umbrella.h */,
-				050978D3E23A8310570A49DA69ED18A3 /* IMBeeHive.debug.xcconfig */,
-				883B078A2A2C14F4FC33A58FBBFEEEB9 /* IMBeeHive.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/IMBeeHive";
-			sourceTree = "<group>";
-		};
-		41AFAC95E7C686619410A30BC19DCFE4 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				CC2A69FA0CB275C9F4559FDE9C7BEE46 /* IMBeeHive.podspec */,
-				931E0C8E833CD25630AAA5CA322611C0 /* LICENSE */,
-				FB0C21E63E5BBF6283593A3958D81C25 /* README.md */,
+				7B08F9891A7515156114DC58CC0CE84F /* IMBeeHive.podspec */,
+				F5C4221829E680A1AB2959895A319CCE /* LICENSE */,
+				70FFB00A02AC64632A9657BA59081A78 /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		14843A4637FA641C4CFAA9C9312ADE81 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				454ACF121C3350E1F100D29E0B99B260 /* IMBeeHive */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		454ACF121C3350E1F100D29E0B99B260 /* IMBeeHive */ = {
+			isa = PBXGroup;
+			children = (
+				C498B5D9022546D52D62DC383335270A /* IMApplicationContext.h */,
+				6A775C115943D5A3AC795923FFB9934A /* IMApplicationContext.m */,
+				8340EC52581B658DC6E0887B0219962E /* IMApplicationDispatcher.h */,
+				DD749F4D75DC63063F4E844D81535DF7 /* IMApplicationDispatcher.m */,
+				2B8BFAAB0CD45CAAB1A846124CBCF0F4 /* IMApplicationExchange.h */,
+				6BB787CBA996C03811E5F1EF6D0EAEE2 /* IMApplicationExchange.m */,
+				0AF1B9884FA4FF2183176BDB7C3D1390 /* IMBeeHive.h */,
+				AED0598CA7D4C325BE016C6326E95458 /* IMBeeHive.m */,
+				90132DFBE758C1C14A3AE50ED0980041 /* IMDispatcherManager.h */,
+				02D81832FB6D9D5DCA9A6185CB7DA9A0 /* IMDispatcherManager.m */,
+				AD90343B5FDF902B6CE67D61325801D7 /* IMIocFactory.h */,
+				45D20A8A8C4A8F615DB0C7D1EA03043E /* IMIocFactory.m */,
+				A4A39E7B43A82C34829ABAAD35CC13D7 /* IMModuleBundle.h */,
+				A79B72057AE49D2EDF335FA61DD6E839 /* IMModuleBundle.m */,
+				FFCA634E7F80C75BABE73BEEED56919C /* IMModuleProtocol.h */,
+				E64AF66EBE26EEA7F3411B9BC3A60F64 /* IMServiceProtocol.h */,
+				139251D0E2CC4D43E207C80E04D56C42 /* Pod */,
+				B8AB86AB1E75699BC2CA27C764BFA901 /* Support Files */,
+			);
+			name = IMBeeHive;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -174,14 +197,6 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		A11BC00C4DDFFF22522A6921C941360D /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F41B0E74C1D36D569CD101C3DA074EB6 /* IMBeeHive */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		A52E0E2BD9E991EF324BABC676B4D7E0 /* Pods-IMBeeHive_Tests */ = {
@@ -200,11 +215,26 @@
 			path = "Target Support Files/Pods-IMBeeHive_Tests";
 			sourceTree = "<group>";
 		};
+		B8AB86AB1E75699BC2CA27C764BFA901 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7D557B288DD8C07428CDDA378D56B461 /* IMBeeHive.modulemap */,
+				275BDA6969DEECD757A068F027714D46 /* IMBeeHive-dummy.m */,
+				7F05D9F9CC0662EBE9D4DEC31012EFF7 /* IMBeeHive-Info.plist */,
+				B0115035FA46B49E4D02544D2E665C46 /* IMBeeHive-prefix.pch */,
+				04C23FD02CD74683D9C396D79616840B /* IMBeeHive-umbrella.h */,
+				0F9278EF63A4CD01A2CF801A88FD2101 /* IMBeeHive.debug.xcconfig */,
+				6ECFB427115640AB65EA8E4DDDB9B798 /* IMBeeHive.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/IMBeeHive";
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				A11BC00C4DDFFF22522A6921C941360D /* Development Pods */,
+				14843A4637FA641C4CFAA9C9312ADE81 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				E1E1221D8DF323552655129D55402595 /* Products */,
 				FAFB75B035E3C9CBF757C1399712E192 /* Targets Support Files */,
@@ -229,30 +259,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F41B0E74C1D36D569CD101C3DA074EB6 /* IMBeeHive */ = {
-			isa = PBXGroup;
-			children = (
-				EE73FC0D077E83404F6A58C73FA66E55 /* IMApplicationContext.h */,
-				A8D282A08E3B478C632BA04F361228B3 /* IMApplicationContext.m */,
-				DF1EB9AADF3D8A03C3E91197B1ED2199 /* IMApplicationDispatcher.h */,
-				5B7880E37DD75A0EFFDDD71A5815CB10 /* IMApplicationDispatcher.m */,
-				26190FF70DFB4A9C65ECA2DB3187FADD /* IMApplicationExchange.h */,
-				66B3A16E6BF74690DE0EC9592787AA5B /* IMApplicationExchange.m */,
-				C021782F876E752740CA4C29E466EF92 /* IMBeeHive.h */,
-				CB3980E83BCDF5429607C57E29087B9D /* IMBeeHive.m */,
-				E7E40E720C6C37C751E9A8ADF8CBF324 /* IMDispatcherManager.h */,
-				A1932B5B0A858712DD1ABCFB57925744 /* IMDispatcherManager.m */,
-				C53CBD155FAB5F32A4571DC0EC6F35DD /* IMIocFactory.h */,
-				CAF38E086DB6678A179C00FEFF3C1FF0 /* IMIocFactory.m */,
-				219CA15F240572AFB5F018BF414FD12F /* IMModuleProtocol.h */,
-				128B5076387A78594CCD5630265A0606 /* IMServiceProtocol.h */,
-				41AFAC95E7C686619410A30BC19DCFE4 /* Pod */,
-				2A170EA92ED85DCA349760C1C512871A /* Support Files */,
-			);
-			name = IMBeeHive;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		FAFB75B035E3C9CBF757C1399712E192 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,27 +271,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		22C36BCFE1B3DC438F1F30F8D1DF75F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				665F06D646F6774C0B0DBC6D4409F0AD /* IMApplicationContext.h in Headers */,
+				0732C0748F2EFCA8F2A3AEE75050403F /* IMApplicationDispatcher.h in Headers */,
+				559CC2ADAEFCC711C0FA192D2695BF6F /* IMApplicationExchange.h in Headers */,
+				D1AE70F9EFA477C4ED34B37B068761DE /* IMBeeHive-umbrella.h in Headers */,
+				25EBF0FAF1FFE4FEB904D0BE7EB138D4 /* IMBeeHive.h in Headers */,
+				13191C1FA9B325ACD23357133850D742 /* IMDispatcherManager.h in Headers */,
+				1312E1390F0B7EB13D62433CAB4977BC /* IMIocFactory.h in Headers */,
+				CF6D060D40BEEF98AF23F79F8D10B7F7 /* IMModuleBundle.h in Headers */,
+				4ABD9C6A9C6923A3D69032E6AC8EF842 /* IMModuleProtocol.h in Headers */,
+				EFE7E74A546821F39C939914F87F2C1D /* IMServiceProtocol.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		717F737A2FFBA39456B3DF5113C0B409 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CBF55EA91DA6E935C2AC712E5A031A23 /* Pods-IMBeeHive_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C172443CF3B31947DE57D715762C9819 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				141403501A2F1F0625E01457287E3C76 /* IMApplicationContext.h in Headers */,
-				C138EF6F9AE974B7472CDCC66FED8245 /* IMApplicationDispatcher.h in Headers */,
-				DBAE7EB8D6A2CBA067FCFBB5F44F1908 /* IMApplicationExchange.h in Headers */,
-				870F6344765A952164A4107593F7D9E5 /* IMBeeHive-umbrella.h in Headers */,
-				A8E9F9DADBD61F5FF9C3477D6D715E63 /* IMBeeHive.h in Headers */,
-				B7B006893D315F0B6EECE2D1A49F789C /* IMDispatcherManager.h in Headers */,
-				72B1BFDB96C25FE64BC7A1797474A6EC /* IMIocFactory.h in Headers */,
-				32BD940EC335A2DFE87C8E2A4A1CAB2B /* IMModuleProtocol.h in Headers */,
-				339570F440336BC29346FB737515A647 /* IMServiceProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,12 +309,12 @@
 /* Begin PBXNativeTarget section */
 		9ED11DD6FF04A828AFC69D804805D710 /* IMBeeHive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 862C4F7AB041CCA1F908272E86AB2BC3 /* Build configuration list for PBXNativeTarget "IMBeeHive" */;
+			buildConfigurationList = 6D30777C492C49308D2A4361067F56C2 /* Build configuration list for PBXNativeTarget "IMBeeHive" */;
 			buildPhases = (
-				C172443CF3B31947DE57D715762C9819 /* Headers */,
-				1042C012223E07ADFB7D1E8080EB89C4 /* Sources */,
-				EB12F890ADC58FAB38D0797E99E11D78 /* Frameworks */,
-				4FF8278C7D7FF1DC06277DB23B2DAC22 /* Resources */,
+				22C36BCFE1B3DC438F1F30F8D1DF75F2 /* Headers */,
+				B7F34C390F67880ACE8ADF9ADB82F7C4 /* Sources */,
+				0FDD783E3E9975733AD3752C58B27093 /* Frameworks */,
+				AD6D363D9AA1E9F790BB34999C397762 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -330,7 +337,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				05638AC530A34F50F86EA0F0101E4FB8 /* PBXTargetDependency */,
+				4B3581D787CC277CD961E6379930D13B /* PBXTargetDependency */,
 			);
 			name = "Pods-IMBeeHive_Tests";
 			productName = "Pods-IMBeeHive_Tests";
@@ -349,7 +356,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F3049015EB9C54C0CED61B2ACA5EA334 /* PBXTargetDependency */,
+				1562028267E6F2C1DCE9F328D23266F4 /* PBXTargetDependency */,
 			);
 			name = "Pods-IMBeeHive_Example";
 			productName = "Pods-IMBeeHive_Example";
@@ -386,14 +393,14 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		4FF8278C7D7FF1DC06277DB23B2DAC22 /* Resources */ = {
+		7B1267614A4456E84174B16EAD9C0124 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7B1267614A4456E84174B16EAD9C0124 /* Resources */ = {
+		AD6D363D9AA1E9F790BB34999C397762 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -410,20 +417,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1042C012223E07ADFB7D1E8080EB89C4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				313BFF459ABC3C46DB1A9DA19C73004C /* IMApplicationContext.m in Sources */,
-				AFF88D829FFC08043BEBA8FF2D0C6C73 /* IMApplicationDispatcher.m in Sources */,
-				DD503A4B6C2EAF2C7D5A0CA23F026378 /* IMApplicationExchange.m in Sources */,
-				C8F24F1499787D746FD6BC492C73AE1D /* IMBeeHive-dummy.m in Sources */,
-				4796A10B71E3CACF4EFE968DF8602AF6 /* IMBeeHive.m in Sources */,
-				6AC9E399BC1C425155FBFA9A45CA1A53 /* IMDispatcherManager.m in Sources */,
-				A6524EE106EEEFF42C2F9C54C3BB2535 /* IMIocFactory.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5E9EBD008E7710699D7F50CC6927CF33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -440,24 +433,70 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B7F34C390F67880ACE8ADF9ADB82F7C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D3222F1BF0C9BEE79F289DC13EAF3EA /* IMApplicationContext.m in Sources */,
+				47BCFDDAF9E9E5A03782C1960D7BC46F /* IMApplicationDispatcher.m in Sources */,
+				54188F2BCA5D14E4E7C876AF437E4233 /* IMApplicationExchange.m in Sources */,
+				D82EEA1B820BC3DA78C7A4E8E7646C65 /* IMBeeHive-dummy.m in Sources */,
+				B884A1945798BAD211F8A974ED930C18 /* IMBeeHive.m in Sources */,
+				75C9C78109B39788144B7E10D3914A30 /* IMDispatcherManager.m in Sources */,
+				37A57AE4881C72D51CC19416CE645C66 /* IMIocFactory.m in Sources */,
+				E1DD3DE3320E94B1378A9FDFAA44B267 /* IMModuleBundle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		05638AC530A34F50F86EA0F0101E4FB8 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-IMBeeHive_Example";
-			target = C401AC657EAEA4C77232165B008D9C00 /* Pods-IMBeeHive_Example */;
-			targetProxy = 5219A2DD1B7BB1E3BE4221D854C6E468 /* PBXContainerItemProxy */;
-		};
-		F3049015EB9C54C0CED61B2ACA5EA334 /* PBXTargetDependency */ = {
+		1562028267E6F2C1DCE9F328D23266F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IMBeeHive;
 			target = 9ED11DD6FF04A828AFC69D804805D710 /* IMBeeHive */;
-			targetProxy = EB233CB1BA80E73AB248F62F3473B0CF /* PBXContainerItemProxy */;
+			targetProxy = 87B27144CC6835F171FDCDDDC0545D91 /* PBXContainerItemProxy */;
+		};
+		4B3581D787CC277CD961E6379930D13B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-IMBeeHive_Example";
+			target = C401AC657EAEA4C77232165B008D9C00 /* Pods-IMBeeHive_Example */;
+			targetProxy = 0DACD825DF970C893B4D472DA7B7A860 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		2157944A4F414E3C6A0016F2CB85F0F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ECFB427115640AB65EA8E4DDDB9B798 /* IMBeeHive.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IMBeeHive/IMBeeHive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IMBeeHive/IMBeeHive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IMBeeHive/IMBeeHive.modulemap";
+				PRODUCT_MODULE_NAME = IMBeeHive;
+				PRODUCT_NAME = IMBeeHive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -589,6 +628,36 @@
 			};
 			name = Debug;
 		};
+		75CEE018514B327C2F4293DC0E18CA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F9278EF63A4CD01A2CF801A88FD2101 /* IMBeeHive.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IMBeeHive/IMBeeHive-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IMBeeHive/IMBeeHive-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IMBeeHive/IMBeeHive.modulemap";
+				PRODUCT_MODULE_NAME = IMBeeHive;
+				PRODUCT_NAME = IMBeeHive;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		C3547A709CE69533F9D3F2E4E9D22638 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E3802CED8C927DDFC046AB5FFAA09176 /* Pods-IMBeeHive_Example.release.xcconfig */;
@@ -615,37 +684,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		C6626768824D6E0E655236D236E54AF0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 883B078A2A2C14F4FC33A58FBBFEEEB9 /* IMBeeHive.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IMBeeHive/IMBeeHive-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IMBeeHive/IMBeeHive-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IMBeeHive/IMBeeHive.modulemap";
-				PRODUCT_MODULE_NAME = IMBeeHive;
-				PRODUCT_NAME = IMBeeHive;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -715,36 +753,6 @@
 			};
 			name = Release;
 		};
-		DA236567B099DF60FBB0B0F251B2CDDC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 050978D3E23A8310570A49DA69ED18A3 /* IMBeeHive.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/IMBeeHive/IMBeeHive-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/IMBeeHive/IMBeeHive-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/IMBeeHive/IMBeeHive.modulemap";
-				PRODUCT_MODULE_NAME = IMBeeHive;
-				PRODUCT_NAME = IMBeeHive;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		E0AECFFA06593CFBBF97307E6653C92F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A543AA85927A66E3F16A7264C7B20E96 /* Pods-IMBeeHive_Tests.debug.xcconfig */;
@@ -798,11 +806,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		862C4F7AB041CCA1F908272E86AB2BC3 /* Build configuration list for PBXNativeTarget "IMBeeHive" */ = {
+		6D30777C492C49308D2A4361067F56C2 /* Build configuration list for PBXNativeTarget "IMBeeHive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DA236567B099DF60FBB0B0F251B2CDDC /* Debug */,
-				C6626768824D6E0E655236D236E54AF0 /* Release */,
+				75CEE018514B327C2F4293DC0E18CA90 /* Debug */,
+				2157944A4F414E3C6A0016F2CB85F0F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -10,9 +10,10 @@
 #import "IMModuleProtocol.h"
 #import "IMServiceProtocol.h"
 
-//#define IMRegister(protocol) [Bifrost registerService:@protocol(protocol) withModule:self.class];
 
-#define IMGetModule(service_protocol) ((id<service_protocol>)[[IMBeeHive shareInstance] createImplFromProtocol:@protocol(service_protocol)])
+#define IMBeanRegister(service_protocol) [[IMBeeHive shareInstance] registerImpl:self.class protocol:@protocol(service_protocol) ];
+
+#define IMGetBean(service_protocol) ((id<service_protocol>)[[IMBeeHive shareInstance] createImplFromProtocol:@protocol(service_protocol)])
 
 NS_ASSUME_NONNULL_BEGIN
 
