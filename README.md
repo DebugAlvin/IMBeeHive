@@ -20,8 +20,20 @@ yy直播
 # Installation
 pod "IMBeeHive"
 # 初始化
-__attribute__((constructor)) void loadBeeHiveMoudle () {
-    [IMBeeHive shareInstance].context.configName = @"IMBeeHive.bundle/IMBeeHive";//可选，默认为IMBeeHive.bundle/IMBeeHive
-    [[IMBeeHive shareInstance] registerAll]; //从配置里面注册所有moudle或者service
-    [[IMBeeHive shareInstance] setupAll]; //设置ioc容器里面所有的对象
-}
+一.首先我们需要在主工程添加一个配置文件，这里我添加的是IMBeeHive.bundle/IMBeeHive.plist，通过配置plist我们可以在启动时注册所有的module
+![image](https://user-images.githubusercontent.com/7621179/136272784-f90af222-7f01-4126-8dfd-d4e1d8e5b46b.png)
+
+二.在主主工程加入__attribute__((constructor))，通常app启动流程为：  
+1.所有Framework的+load方法   
+2.所有Framework的c++构造方法  
+3.主程序的+load方法   
+4.主程序的c++构造方法  
+我们在主程序Appdelegate之前做初始化,IMBeeHive才可以通过HOOK + NSInvocation方式让已经注册的Moudle管理Appdelegate的生命周期
+复制代码
+```
+__attribute__((constructor)) void loadBeeHiveMoudle () {  
+    [IMBeeHive shareInstance].context.configName = @"IMBeeHive.bundle/IMBeeHive";//可选，默认为IMBeeHive.bundle/IMBeeHive  
+    [[IMBeeHive shareInstance] registerAll]; //从配置里面注册所有moudle或者service  
+    [[IMBeeHive shareInstance] setupAll]; //设置ioc容器里面所有的对象  
+}  
+```
