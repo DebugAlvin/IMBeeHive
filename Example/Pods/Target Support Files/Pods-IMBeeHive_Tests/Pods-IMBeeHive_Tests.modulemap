@@ -1,0 +1,6 @@
+framework module Pods_IMBeeHive_Tests {
+  umbrella header "Pods-IMBeeHive_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

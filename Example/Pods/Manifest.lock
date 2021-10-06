@@ -1,0 +1,16 @@
+PODS:
+  - IMBeeHive (0.1.0)
+
+DEPENDENCIES:
+  - IMBeeHive (from `../`)
+
+EXTERNAL SOURCES:
+  IMBeeHive:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IMBeeHive: 95589cc5a2bae3de99e456324a6fc7158418eeb8
+
+PODFILE CHECKSUM: 300362d9d89c7f1a523d0e586b4ff7fd60564b0d
+
+COCOAPODS: 1.10.2
