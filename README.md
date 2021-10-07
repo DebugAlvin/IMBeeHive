@@ -60,7 +60,7 @@ pod lib create IMLuanchMoudle
 <img width="491" alt="WeChat7ad9d59058808237942820048c7db9a3" src="https://user-images.githubusercontent.com/7621179/136320938-cbc53f65-0299-49ee-9ea9-529091700745.png">  
 Example可以作为我们的壳工程，平时对模块的开发和调试可以在这里进行。另外我们需要配置IMLuanchMoudle.podspec，具体方法请参考DEMO  
   
-新建一个IMLaunchModuleProtocol.h,值得注意的是我们必须遵循<IMModuleProtocol>协议  
+新建一个IMLaunchModuleProtocol.h,值得注意的是我们必须遵循IMModuleProtocol协议  
   
 ```
 #import <IMBeeHive/IMBeeHive.h>
