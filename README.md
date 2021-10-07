@@ -29,7 +29,7 @@ pod "IMBeeHive"
 3.主程序的+load方法   
 4.主程序的c++构造方法  
 我们在主程序Appdelegate之前做初始化,IMBeeHive才可以通过HOOK + NSInvocation方式让已经注册的Moudle管理Appdelegate的生命周期
-复制代码
+
 ```
 __attribute__((constructor)) void loadBeeHiveMoudle () {  
     [IMBeeHive shareInstance].context.configName = @"IMBeeHive.bundle/IMBeeHive";//可选，默认为IMBeeHive.bundle/IMBeeHive  
