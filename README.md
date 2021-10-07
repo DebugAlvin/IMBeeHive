@@ -19,7 +19,9 @@ https://github.com/DebugAlvin/IMAudioLive
 使用protocol-class方案service无需注册  
 支持route（计划更新）  
 # Installation
+```
 pod "IMBeeHive"
+```
 # 初始化
 一.首先我们需要在主工程添加一个配置文件，这里我添加的是IMBeeHive.bundle/IMBeeHive.plist，通过配置plist我们可以在启动时注册所有的Moudle，实际开发的项目Moudle并不会很多，我目前开发的项目大概也就8个Moudle，IMLuanchMoudle、IMHomeMoudle、IMDynamicMoudle、IMChatMoudle、IMMineMoudle...，所以在推荐在plist里面统一注册Moudle
 ![image](https://user-images.githubusercontent.com/7621179/136272784-f90af222-7f01-4126-8dfd-d4e1d8e5b46b.png)
