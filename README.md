@@ -10,7 +10,8 @@ yy直播
 网易云音乐  
 ![3](https://user-images.githubusercontent.com/7621179/135894056-d52eeb00-d86b-4706-9940-f829da3b1bd5.png)  
 
-
+# 完整DEMO  
+https://github.com/DebugAlvin/IMAudioLive
 
 # 项目特色
 组件管理生命周期  
