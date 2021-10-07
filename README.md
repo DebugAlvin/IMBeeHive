@@ -38,3 +38,22 @@ __attribute__((constructor)) void loadBeeHiveMoudle () {
     [[IMBeeHive shareInstance] setupAll]; //设置ioc容器里面所有的对象  
 }  
 ```
+# 创建Moudle
+一.使用cocopods创建Moudle  
+
+首先cd到主程序目录，然后执行命令pod lib create xxxxx
+
+```
+pod lib create IMLuanchMoudle
+```
+
+将会询问以下内容：  
+
+1.What Language do you want to use?? [Swift / objC]  
+2.Would you like to include a demo application with your Library? [Yes / No]  
+3.Would you like to do view based testing? [Yes / No]  
+4.What is your class prefix?  
+  
+创建成功后会打开Xcode   
+<img width="491" alt="WeChat7ad9d59058808237942820048c7db9a3" src="https://user-images.githubusercontent.com/7621179/136320938-cbc53f65-0299-49ee-9ea9-529091700745.png">
+Example可以作为我们的壳工程，平时对模块的开发和调试可以在这里进行。另外我们需要配置IMLuanchMoudle.podspec，具体方法请参考DEMO
