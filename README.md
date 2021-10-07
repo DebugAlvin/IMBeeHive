@@ -21,7 +21,7 @@ https://github.com/DebugAlvin/IMAudioLive
 # Installation
 pod "IMBeeHive"
 # 初始化
-一.首先我们需要在主工程添加一个配置文件，这里我添加的是IMBeeHive.bundle/IMBeeHive.plist，通过配置plist我们可以在启动时注册所有的module
+一.首先我们需要在主工程添加一个配置文件，这里我添加的是IMBeeHive.bundle/IMBeeHive.plist，通过配置plist我们可以在启动时注册所有的Moudle，实际开发的项目Moudle并不会很多，我目前开发的项目大概也就8个Moudle，IMLuanchMoudle、IMHomeMoudle、IMDynamicMoudle、IMChatMoudle、IMMineMoudle...，所以在推荐在plist里面统一注册Moudle
 ![image](https://user-images.githubusercontent.com/7621179/136272784-f90af222-7f01-4126-8dfd-d4e1d8e5b46b.png)
 
 二.在主主工程加入__attribute__((constructor))，通常app启动流程为：  
@@ -55,5 +55,127 @@ pod lib create IMLuanchMoudle
 4.What is your class prefix?  
   
 创建成功后会打开Xcode   
-<img width="491" alt="WeChat7ad9d59058808237942820048c7db9a3" src="https://user-images.githubusercontent.com/7621179/136320938-cbc53f65-0299-49ee-9ea9-529091700745.png">
-Example可以作为我们的壳工程，平时对模块的开发和调试可以在这里进行。另外我们需要配置IMLuanchMoudle.podspec，具体方法请参考DEMO
+<img width="491" alt="WeChat7ad9d59058808237942820048c7db9a3" src="https://user-images.githubusercontent.com/7621179/136320938-cbc53f65-0299-49ee-9ea9-529091700745.png">  
+Example可以作为我们的壳工程，平时对模块的开发和调试可以在这里进行。另外我们需要配置IMLuanchMoudle.podspec，具体方法请参考DEMO  
+  
+新建一个IMLaunchModuleProtocol.h,值得注意的是我们必须遵循<IMModuleProtocol>协议  
+  
+```
+#import <IMBeeHive/IMBeeHive.h>
+/**
+ The services provided by Launch module to other modules
+ */
+@protocol IMLaunchModuleProtocol <IMModuleProtocol>
+
+-(void)doSomeTings;
+
+@end
+
+```
+新建一个IMLuanchMoudle.h和IMLuanchMoudle.m  
+```
+//IMLuanchMoudle.h
+#import <Foundation/Foundation.h>
+
+#import "IMLaunchModuleProtocol.h"
+
+static UIWindow *mWindow = nil;
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface IMLuanchMoudle : NSObject<IMLaunchModuleProtocol>
+
+@end
+
+NS_ASSUME_NONNULL_END  
+```
+```
+//IMLuanchMoudle.m  
+#import "IMLuanchMoudle.h"
+#import "IMLuanchViewController.h"
+
+@implementation IMLuanchMoudle
+
+//每个Moudle必须实现shareInstance方法，编译器会提醒
++ (instancetype)shareInstance {
+    static dispatch_once_t p;
+    static id Instance = nil;
+    dispatch_once(&p, ^{
+        Instance = [[self alloc] init];
+    });
+    return Instance;
+}
+
+//如果我们当前的模块是主模块，我们可以实现didFinishLaunchingWithOptions设置rootViewController
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    NSLog(@"[IMLuanchMoudle] --- [执行]");
+    mWindow = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    mWindow.backgroundColor = [UIColor whiteColor];
+    [mWindow makeKeyAndVisible];
+    [UIApplication sharedApplication].delegate.window = mWindow;
+    mWindow.rootViewController = [[IMLuanchViewController alloc] init];
+    return YES;
+}
+
+- (void)doSomeTings {
+    NSLog(@"通过IMLaunchModuleProtocol协议调用IMLuanchMoudle的doSomeTings方法");
+}
+
+
+```  
+# 模块间的互相调用  
+首先我们需要在Protocol暴露方法
+```  
+#import <IMBeeHive/IMBeeHive.h>
+#import <IMBeeHive/IMBeeHive.h>
+
+@protocol IMMineModuleProtocol <IMModuleProtocol>
+
+- (UIViewController *)mainViewController;
+-(void)doSomeTingsA;
+-(void)doSomeTingsB;
+
+
+@end
+```  
+然后在Protocol的实现类实现这些方法  
+```
+#import "IMMineModule.h"
+#import "IMMIneViewController.h"
+
+@implementation IMMineModule
+
++ (instancetype)shareInstance {
+    static dispatch_once_t p;
+    static id Instance = nil;
+    dispatch_once(&p, ^{
+        Instance = [[self alloc] init];
+    });
+    return Instance;
+}
+
+-(UIViewController *)mainViewController {
+    IMMIneViewController *controller = [[IMMIneViewController alloc] init];
+    return controller;
+}
+
+- (void)doSomeTingsA {
+    NSLog(@"通过IMLaunchModuleProtocol协议调用IMLuanchMoudle的doSomeTingsA方法");
+}
+
+- (void)doSomeTingsB {
+    NSLog(@"通过IMLaunchModuleProtocol协议调用IMLuanchMoudle的doSomeTingsB方法");
+}
+
+
+@end  
+``` 
+    
+最后我们可以在任意模块通过Protocol调用实现类的方法  
+``` 
+id<IMMineModuleProtocol> pModule = IMGetBean(IMMineModuleProtocol);
+[pModule doSomeTingsA];
+[pModule doSomeTingsB];
+UIViewController *controller = [pModule mainViewController];
+[self.navigationController pushViewController:controller animated:YES];  
+```  
