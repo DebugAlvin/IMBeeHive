@@ -18,6 +18,7 @@ https://github.com/DebugAlvin/IMAudioLive
 组件间通信  
 使用protocol-class方案service无需注册  
 支持route（计划更新）  
+支持中间件（计划更新）
 # Installation
 ```
 pod "IMBeeHive"
